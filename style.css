@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300");
+
+h1{
+  text-align: center;
+}
+
+#buttons-container {
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+#buttons-container button {
+  margin: 0 10px;
+  width: 150px;
+  height: 40px;
+  font-size: 16px;
+  text-align: center;
+  background-color: grey; 
+  color: #fff; 
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#buttons-container button:hover {
+  background-color: black;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.product-card {
+  position: relative;
+  overflow: hidden;
+  flex: 0 0 calc(25% - 15px);
+  max-width: calc(25% - 5px);
+  margin-bottom: 20px;
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 5px;
+  box-sizing: border-box;
+}
+.product-card:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+
+}
+
+.product-card img {
+  display: block;
+  width: 280px;
+  height: 400px;
+  margin: 0 auto 10px;
+}
+
+.product-card h3,
+.product-card p,
+.discount-offer,
+.product-price,
+.add-to-cart-btn {
+  display: block;
+  margin-top: 10px;
+}
+
+.discount-offer {
+  color: red;
+}
+
+.add-to-cart-btn {
+  background-color: black;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.new-offer-tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: red;
+  color: white;
+  padding: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.add-to-cart-btn:hover {
+  background-color: grey;
+}
+
+@media screen and (max-width: 480px) {
+  .product-card {
+      flex: 0 0 100%;
+      max-width: 100%;
+  }
+}
+
+.product-card img {
+  width: 280px;
+  height: 400px;
+}
+
+.product-title {
+  font-weight: normal;
+}
+
+.product-card h3,
+.product-card p {
+    margin-top: 10px;
+}
+
+.new-offer-tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: red;
+  color: white;
+  padding: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  z-index: 1;
+}
